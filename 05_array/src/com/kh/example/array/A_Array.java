@@ -24,9 +24,9 @@ public class A_Array {
 	//		1) 인덱스 이용
     //			배열명[인덱스 번호] = 값;
 	// 		2) for문 이용 : 규칙이 있을 때만 사용 가능
-	//			for(int i = 0; i < 배열명.length; i++){
-	//				배열명[i] = 값;
-	//			}
+//				for(int i = 0; i < 배열명.length; i++){
+//					배열명[i] = 값;
+//				}
 	//		3) 선언과 동시에 초기화
 	//			자료형[] 배열명 = {값};
 	//			자료형[] 배열명 = new 자료형[]{값};
@@ -64,7 +64,7 @@ public class A_Array {
 		arr[6] = 70;
 		arr[7] = 80;
 		arr[8] = 90;
-//		arr[9] = 100; // java.lang.ArrayIndexOutOfBoundsException: 9
+		arr[9] = 100; // java.lang.ArrayIndexOutOfBoundsException: 9
 		
 		// 규칙이 보이기 때문에 for문을 이용해 값을 집어넣을 수 있다.
 		for(int i = 0; i < arr.length; i++) {

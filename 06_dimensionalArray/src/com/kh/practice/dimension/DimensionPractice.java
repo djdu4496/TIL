@@ -145,7 +145,6 @@ public class DimensionPractice {
 		char[][] chArr = new char[row][]; // 가변 배열 할당
 		
 		
-		
 		for(int i=0;i<chArr.length;i++) {
 			System.out.print(i+"행의 열 크기 : ");
 			int col = sc.nextInt();
@@ -158,7 +157,7 @@ public class DimensionPractice {
 			for(int j=0;j<chArr[i].length;j++) {
 				chArr[i][j]=value++;
 			}
-		}
+		}// 값 대입
 		
 		for(int i=0;i<chArr.length;i++) {
 			for(int j=0;j<chArr[i].length;j++) {
