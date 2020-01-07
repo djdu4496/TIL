@@ -6,7 +6,7 @@ public class Run {
 		DefaultClassTest dct = new DefaultClassTest();
 		
 		dct.test();
-		// °°Àº ÆĞÅ°Áö¶ó °¡´É
+		// ê°™ì€ íŒ¨í‚¤ì§€ë¼ ê°€ëŠ¥
 
 	}
 
