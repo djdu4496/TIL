@@ -28,11 +28,13 @@ public class User {
 	// Duplicate method User() in type User : 오버로딩이 적용되지 않음.
 	// 같은 이름의 생성자(메소드)가 있을 때 오버로딩이 적용되지 않으면 에러 발생.
 	
-	public User(String 	userId, String userPwd) {
-			this.userId = userId;
-			this.userPwd = userPwd;
+	public User(String id, String pwd) {
+		// 매개 변수 개수가 다르므로 오버로딩이 적용됨
+		userId = id;
+		userPwd = pwd;
+
 	}
-	// 매개 변수 개수가 다르므로 오버로딩이 적용됨
+	
 	
 	public User(String userId,String userPwd,String userName) {
 //		this.userId = userId;
@@ -56,8 +58,8 @@ public class User {
 //		userId = id;
 //		userName = name;
 //	}
-	
+	 	
 	public void inform() {
 		System.out.println(userId + ", " + userPwd + ", " + userName + ", " + enrollDate);
-	}
+	} 
 }

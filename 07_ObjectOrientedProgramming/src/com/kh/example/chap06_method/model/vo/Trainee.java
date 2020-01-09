@@ -36,7 +36,7 @@ public class Trainee {
 	
 	// 필드에 있는 name을 반환하는 getter
 	public String getName() {
-		return name;
+		return name; // 
 	}
 	
 	// 필드에 있는 ACADEMY을 반환하는 getter
