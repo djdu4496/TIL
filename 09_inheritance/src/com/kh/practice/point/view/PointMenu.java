@@ -11,7 +11,6 @@ public class PointMenu {
 	private RectangleController rc = new RectangleController();
 	
 	public void mainMenu() {
-		while(true) {
 			System.out.println("===== 메뉴 =====");
 			System.out.println("1. 원 : ");
 			System.out.println("2. 사각형 : ");
@@ -23,8 +22,11 @@ public class PointMenu {
 				circleMenu();
 			} else if (menuNum==2) {
 				rectangleMenu();
-			} 
-		}	
+			} else if (menuNum==9) {
+				mainMenu();
+			} else {
+				System.out.println("종료합니다.");
+			}
 	}
 	
 
@@ -68,7 +70,11 @@ public class PointMenu {
 		int y = sc.nextInt();
 		System.out.print("반지름 : ");
 		int radius = sc.nextInt();
-		cc.calcCircum(x,y,radius);
+//M1 	String result = cc.calcCircum(x,y,radius);
+//		System.out.println(result);
+//M2		
+		System.out.println(cc.calcCircum(x, y, radius));
+		
 	}
 	
 	public void calcCircleArea() {
@@ -79,6 +85,8 @@ public class PointMenu {
 		System.out.print("반지름 : ");
 		int radius = sc.nextInt();
 		cc.calcArea(x, y, radius);
+		
+		System.out.println(cc.calcArea(x,y,radius));
 	}
 	
 	public void calcPerimeter() {
@@ -88,10 +96,10 @@ public class PointMenu {
 		int y = sc.nextInt();
 		System.out.print("높이 : ");
 		int height = sc.nextInt();
-		System.out.print("넓이 : ");
+		System.out.print("너비 : ");
 		int width = sc.nextInt();
 		
-		rc.calcPerimeter(x, y, height, width);
+		System.out.println(rc.calcPerimeter(x,y,height,width));
 
 	}
 	
@@ -105,7 +113,7 @@ public class PointMenu {
 		System.out.print("넓이 : ");
 		int width = sc.nextInt();
 		
-		rc.calcArea(x, y, height, width);
+		System.out.println(rc.calcArea(x, y, height, width));
 	}
 	
 	

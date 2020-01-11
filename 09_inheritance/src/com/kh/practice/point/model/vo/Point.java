@@ -30,6 +30,6 @@ public class Point {
 	
 	@Override
 	public String toString() {
-		return super.toString()+ " " + x + " " + y;
+		return x + " " + y;
 	}
 }

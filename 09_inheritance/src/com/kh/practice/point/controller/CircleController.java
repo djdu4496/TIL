@@ -11,7 +11,7 @@ public class CircleController {
 		
 		double surface = pi * radius * radius;
 		
-		return super.toString() + " " + surface;
+		return x + ", " + y + ", " + radius + " / " +surface;
 		
 	}
 	
@@ -20,7 +20,7 @@ public class CircleController {
 		
 		double round = pi * radius * 2;
 		
-		return super.toString() + ", " + radius + " / " + round;
+		return x + ", " + y + ", " + radius + " / " +round;
 		
 	}
 	

@@ -6,14 +6,13 @@ public class RectangleController {
 	private Rectangle r = new Rectangle();
 	
 	public String calcArea(int x, int y, int height, int width) {
-		double surface = width * height;
+		int surface = width * height;
 		
-		return toString() + " " + surface;
+		return x + ", " + y + " " +height + " " + width + " / " + surface;
 	}
 	
 	public String calcPerimeter(int x, int y, int height, int width) {
-		double round = 2 * (height + width);
-		
-		return toString() + " " + round; 
+		int round = 2 * (height + width);
+		return x + ", " + y + " " +height + " " + width + " / " + round;
 	}	
 }
