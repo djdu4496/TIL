@@ -14,19 +14,16 @@ public class TokenController {
 		int str2 = stObj.countTokens();
 		System.out.print("토큰 처리 후 글자 : ");
 		while(stObj.hasMoreTokens()) {
-			str1 = stObj.nextToken();
-			System.out.print(str1);
+			str1 += stObj.nextToken();
+			
 		}
+		System.out.print(str1);
 		System.out.println();
 		System.out.println("토큰 처리 후 개수 : " + str2);
 		
-		StringTokenizer stObj2 = new StringTokenizer(str," ");
 		
-		System.out.print("모두 대문자로 변환 : ");
-		while(stObj2.hasMoreTokens()) {
-			str3 = stObj2.nextToken().toUpperCase();
-			System.out.print(str3);
-		}
+		System.out.print("모두 대문자로 변환 : "+ str1.toUpperCase());
+
 				
 		return str1;
 		
