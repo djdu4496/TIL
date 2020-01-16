@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class ByteDAO {
 	public void fileOpen() {
-		try {
-			FileInputStream fis = new FileInputStream("a_byte.txt");
+		
+		try (FileInputStream fis = new FileInputStream("a_byte.txt")) {
 			
 			// abcdefgcde
 //			while(fis.read()!=-1){
@@ -23,15 +23,14 @@ public class ByteDAO {
 			e.printStackTrace();
 		} catch (IOException e) {	
 			e.printStackTrace();
-		}
+		} 
 
 	}
 	
 	public void fileSave() {
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream("a_byte.txt");
-
+		
+		try (FileOutputStream fos = new FileOutputStream("a_byte.txt");){
+			
 			// write(int b):void
 			fos.write(97);
 			
@@ -47,12 +46,6 @@ public class ByteDAO {
 			e.printStackTrace();
 		} catch(IOException e) {
 			e.printStackTrace(); 
-		} finally {
-			try {
-			fos.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
 		}
 	}
 }
