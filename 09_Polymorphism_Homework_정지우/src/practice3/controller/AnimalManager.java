@@ -20,9 +20,13 @@ public class AnimalManager {
 		aArr[4] = new Dog("베일","요크셔",3);				
 				
 		// 반복문으로 각 인덱스별 객체의 speak() 메소드 실행
-		for(int i=0;i<aArr.length;i++) {
-				System.out.print(aArr[i].toString());
+		for(int i=0;i<aArr.length;i++) {   // 동적 바인딩
 				aArr[i].speak();
+//			if(aArr[i] instanceof Dog) {   // i번째 인덱스 배열이 참조하는 클래스
+//				((Dog)aArr[i]).speak();
+//			} else if(aArr[i] instanceof Cat) {
+//				((Cat)aArr[i]).speak();
+//			}
 		}
 		
 	}
